@@ -1,6 +1,6 @@
-// Typing Animation
+// Typing Animation for Full Name
 const typedText = document.querySelector('.name');
-const text = "Ketan";
+const text = "Ketan Barve"; // Full name
 let index = 0;
 
 function type() {
