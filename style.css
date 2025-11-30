@@ -1,30 +1,56 @@
+/* ========================
+   Body & Background
+======================== */
 body {
-    background: #0d0d0d;
-    color: white;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
     text-align: center;
+    background: #0d0d0d;
+    overflow-x: hidden;
 }
 
+/* Matrix-style animated background */
+#bgCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* behind content */
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================
+   Container
+======================== */
 .container {
     max-width: 900px;
     margin: auto;
     padding: 40px 20px;
+    position: relative;
+    z-index: 1;
 }
 
+/* ========================
+   Profile Picture
+======================== */
 .profile {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 3px solid #0aff0a;
     margin-bottom: 20px;
     object-fit: cover;
 }
 
+/* ========================
+   Headings & Subtitle
+======================== */
 h1 {
     font-size: 2.5rem;
     margin: 10px 0;
+    color: #0aff0a;
 }
 
 .subtitle {
@@ -33,6 +59,9 @@ h1 {
     color: #bbb;
 }
 
+/* ========================
+   Buttons
+======================== */
 .buttons {
     margin: 20px 0;
 }
@@ -41,42 +70,4 @@ h1 {
     display: inline-block;
     padding: 12px 22px;
     margin: 10px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: white;
-    color: black;
-}
-
-.section-title {
-    margin-top: 40px;
-    font-size: 2rem;
-}
-
-.projects {
-    margin-top: 20px;
-}
-
-.card {
-    background: #1a1a1a;
-    margin: 15px auto;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 700px;
-    text-align: left;
-    border: 1px solid #333;
-}
-
-.card h3 {
-    margin-top: 0;
-}
-
-.card p {
-    color: #ccc;
-}
+    border: 2px solid #0aff0a;
