@@ -1,107 +1,100 @@
-/* GENERAL */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Poppins", sans-serif;
+    background: #f4f7fb;
     margin: 0;
-    background: #f4f7ff;
-    color: #0b0c21;
+    padding: 0;
+    color: #333;
 }
 
-a { text-decoration: none; }
-
-/* HERO SECTION */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
+/* Opening Image Section */
+.welcome {
+    width: 100%;
+    height: 100vh;
+    background: url("assets/hero-image.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-title {
-    font-size: 48px;
-    font-weight: 800;
-    letter-spacing: -1px;
+.welcome button {
+    background: #0078ff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.hero-subtitle {
-    font-size: 24px;
-    color: #4a4f63;
-    margin-top: 10px;
-    font-weight: 600;
+.hidden {
+    display: none;
 }
 
-.hero-desc {
-    max-width: 650px;
-    margin: 20px auto;
-    color: #5d657a;
-    font-size: 18px;
+.welcome button:hover {
+    background: #005fcc;
 }
 
-.hero-buttons {
-    margin-top: 25px;
+/* Main Content */
+#portfolio {
+    padding: 60px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 30px;
 }
 
 .btn {
-    background: #007bff;
-    padding: 12px 26px;
-    color: white;
-    border-radius: 30px;
-    font-weight: 600;
     display: inline-block;
-    margin: 5px;
+    background: #0078ff;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 10px;
 }
 
-.btn-outline {
-    border: 2px solid #007bff;
-    padding: 10px 24px;
-    color: #007bff;
-    border-radius: 30px;
-    font-weight: 600;
-    margin: 5px;
-}
-
-/* PROJECT SECTION */
+/* Projects Section */
 .projects {
-    padding: 50px 20px;
-}
-
-.project-heading {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-
-.project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
-    max-width: 1100px;
-    margin: auto;
 }
 
-/* PROJECT CARD FIX (no overlapping) */
-.project-card {
-    background: white;
-    padding: 24px;
-    border-radius: 16px;
-    box-shadow: 0px 4px 16px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 220px;
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform .2s;
 }
 
-.project-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: center;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.project-card p {
-    color: #555;
-    text-align: center;
-    flex-grow: 1;
-}
-
-.project-card .btn {
+.card a {
+    display: inline-block;
     margin-top: 10px;
-    align-self: center;
+    text-decoration: none;
+    background: #0078ff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    color: #555;
 }
