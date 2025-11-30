@@ -12,12 +12,12 @@ body {
   padding: 2rem;
 }
 
-header {
+.intro {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-header h1 {
+.intro h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -26,7 +26,7 @@ header h1 {
   color: #0078d7;
 }
 
-header p {
+.intro p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -51,41 +51,53 @@ header p {
   background: #005fa3;
 }
 
-.about, .projects {
-  margin-bottom: 2rem;
+.about {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.about h2, .projects h2 {
+.about h2 {
   color: #0078d7;
   margin-bottom: 1rem;
 }
 
+.projects h2 {
+  text-align: center;
+  color: #0078d7;
+  margin-bottom: 2rem;
+}
+
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
-.card {
+.project-btn {
   background: white;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.project-btn:hover {
   transform: translateY(-5px);
 }
 
-.card h3 {
+.project-btn h3 {
   margin-top: 0;
   color: #0078d7;
 }
 
+.project-btn p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0 1rem;
+}
+
 .view-btn {
   display: inline-block;
-  margin-top: 1rem;
   color: #0078d7;
   text-decoration: none;
   font-weight: bold;
@@ -96,4 +108,5 @@ footer {
   padding: 1rem;
   background: #eee;
   font-size: 0.9rem;
+  margin-top: 3rem;
 }
