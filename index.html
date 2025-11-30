@@ -1,107 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ketan Barve | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ketan Barve - DevOps Engineer</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+<div class="container">
 
-  <!-- Header / Hero Section -->
-  <header class="hero">
-    <h1>Ketan Barve</h1>
-    <p>Software Developer | Cloud & DevOps Enthusiast</p>
-    <a href="#projects" class="btn-primary">View My Projects</a>
-  </header>
+    <img src="profile.jpg" class="profile" alt="Profile Picture">
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      Motivated and enthusiastic professional eager to learn and grow in
-      software development and cloud technologies. Passionate about DevOps,
-      automation, and building efficient cloud-native applications.
-    </p>
-  </section>
+    <h1><span id="typing"></span></h1>
+    <p class="subtitle">DevOps Engineer | AWS | Kubernetes | CI/CD | Docker | Linux</p>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
+    <div class="buttons">
+        <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+        <a href="https://linkedin.com/in/your-link" class="btn" target="_blank">LinkedIn</a>
+    </div>
 
-    <div class="project-grid">
+    <h2 class="section-title">Projects</h2>
 
-      <div class="project-card">
-        <h3>Kubernetes Hello World</h3>
-        <p>A simple Kubernetes deployment showcasing pods, services, and scaling.</p>
-        <a href="https://github.com/Ketan-Barve/k8s-hello-world" class="btn-secondary">View Project</a>
-      </div>
+    <div class="projects">
 
-      <div class="project-card">
-        <h3>CI/CD with GitHub Actions & EC2</h3>
-        <p>Automated CI/CD pipeline deploying to AWS EC2 using GitHub Actions.</p>
-        <a href="https://github.com/Ketan-Barve/ci-cd-github-actions-ec2" class="btn-secondary">View Project</a>
-      </div>
+        <div class="card">
+            <h3>CI/CD Pipeline • GitHub Actions → EC2</h3>
+            <p>Configured automated build & deploy pipeline using GitHub Actions and AWS EC2.</p>
+        </div>
 
-      <div class="project-card">
-        <h3>Docker Node.js App</h3>
-        <p>Node.js application containerized using Docker best practices.</p>
-        <a href="https://github.com/Ketan-Barve/docker-nodejs-app" class="btn-secondary">View Project</a>
-      </div>
+        <div class="card">
+            <h3>Dockerized Node.js App</h3>
+            <p>Containerized web application with Docker & deployed using AWS ECS.</p>
+        </div>
 
-      <div class="project-card">
-        <h3>AWS Lambda API</h3>
-        <p>Serverless API created using AWS Lambda, API Gateway, and IAM roles.</p>
-        <a href="https://github.com/Ketan-Barve/aws-lambda-api" class="btn-secondary">View Project</a>
-      </div>
+        <div class="card">
+            <h3>Kubernetes “Hello World” App</h3>
+            <p>Deployed app using Kubernetes Deployment, Service & Ingress.</p>
+        </div>
 
-      <div class="project-card">
-        <h3>VPC & EC2 Architecture</h3>
-        <p>A fully isolated VPC network with public/private subnets & EC2 setup.</p>
-        <a href="https://github.com/Ketan-Barve/vpc-ec2-architecture" class="btn-secondary">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Monitoring with CloudWatch</h3>
-        <p>CloudWatch monitoring dashboards, alerts, and log groups.</p>
-        <a href="https://github.com/Ketan-Barve/monitoring-cloudwatch" class="btn-secondary">View Project</a>
-      </div>
+        <div class="card">
+            <h3>AWS Monitoring & Alerts</h3>
+            <p>CloudWatch dashboards, alarms, and automated notifications.</p>
+        </div>
 
     </div>
-  </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>Skills & Technologies</h2>
+</div>
 
-    <div class="skills-grid">
-      <span>JavaScript</span>
-      <span>Node.js</span>
-      <span>Python</span>
-      <span>AWS</span>
-      <span>Docker</span>
-      <span>Kubernetes</span>
-      <span>Linux</span>
-      <span>Git & GitHub</span>
-      <span>CI/CD</span>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-
-    <p>Email me directly:</p>
-    <a href="mailto:ketanbarve89@gmail.com" class="btn-primary contact-btn">
-      📩 Contact: ketanbarve89@gmail.com
-    </a>
-  </section>
-
-  <footer>
-    <p>© 2025 Ketan Barve. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
