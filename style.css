@@ -1,4 +1,76 @@
-/* Projects section */
+/* Reset & basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dark mode body */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Intro Section */
+.name {
+    color: #00d8ff;
+}
+
+.typing {
+    font-size: 1.5rem;
+    color: #ffdd57;
+    margin: 10px 0;
+    min-height: 2rem;
+}
+
+.role {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #bbbbbb;
+}
+
+/* Buttons */
+.buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 216, 255, 0.4);
+}
+
+.btn:first-child {
+    background-color: #00d8ff;
+    color: #121212;
+}
+
+.btn:last-child {
+    background-color: transparent;
+    border: 2px solid #00d8ff;
+    color: #00d8ff;
+}
+
+/* Projects Section */
 .projects {
     margin-top: 50px;
     text-align: center;
@@ -32,11 +104,3 @@
 }
 
 .card h3 {
-    color: #ffdd57;
-    margin-bottom: 10px;
-}
-
-.card p {
-    color: #bbbbbb;
-    font-size: 0.95rem;
-}
