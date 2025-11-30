@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ketan Barve Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketan Barve Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Hi, I'm <span class="name">Ketan</span></h1>
-            <h2>DevOps and Cloud Engineer</h2>
-            <p>I'm a motivated and enthusiastic DevOps and Cloud Engineer passionate about automation, infrastructure as code, and building scalable cloud-native applications.</p>
-            <div class="buttons">
-                <a href="Ketan_Barve_Resume.pdf" class="btn" download>Download Resume</a>
-                <a href="https://www.linkedin.com/in/ketan-barve-500416246/" class="btn" target="_blank">LinkedIn</a>
-            </div>
-        </section>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <button id="theme-toggle">🌙</button>
+    </header>
 
-        <!-- Projects Section -->
-        <section class="projects">
-            <h2>🚀 Projects</h2>
-            <div class="project-grid">
-                <div class="project">
-                    <h3>Kubernetes Hello World</h3>
-                    <p>A simple Kubernetes deployment showcasing pods, services, and scaling.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>CI/CD with GitHub Actions & EC2</h3>
-                    <p>Automated CI/CD pipeline deploying a Node.js app using GitHub Actions and EC2.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Docker Node.js App</h3>
-                    <p>Node.js application containerized using Docker best practices.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>AWS Lambda API</h3>
-                    <p>Serverless application built in AWS Lambda with API Gateway integration.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>VPC & EC2 Architecture</h3>
-                    <p>Demonstrates VPC setup, subnets, and EC2 instances configuration.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Monitoring with CloudWatch</h3>
-                    <p>Monitoring setup using CloudWatch alarms and dashboards for EC2 and Lambda functions.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
-        </section>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Hi, I'm <span class="name"></span></h1>
+      <h2>DevOps and Cloud Engineer</h2>
+      <p>I'm a motivated and enthusiastic DevOps and Cloud Engineer passionate about automation, infrastructure as code, and building scalable cloud-native applications.</p>
+      <div class="buttons">
+        <a href="Ketan_Barve_Resume.pdf" class="btn" download>Download Resume</a>
+        <a href="https://www.linkedin.com/in/ketan-barve-500416246/" class="btn" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2>🚀 Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3>Kubernetes Hello World</h3>
+          <p>A simple Kubernetes deployment showcasing pods, services, and scaling.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <h3>CI/CD with GitHub Actions & EC2</h3>
+          <p>Automated CI/CD pipeline deploying a Node.js app using GitHub Actions and EC2.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Docker Node.js App</h3>
+          <p>Node.js application containerized using Docker best practices.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <h3>AWS Lambda API</h3>
+          <p>Serverless application built in AWS Lambda with API Gateway integration.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <h3>VPC & EC2 Architecture</h3>
+          <p>Demonstrates VPC setup, subnets, and EC2 instances configuration.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Monitoring with CloudWatch</h3>
+          <p>Monitoring setup using CloudWatch alarms and dashboards for EC2 and Lambda functions.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
