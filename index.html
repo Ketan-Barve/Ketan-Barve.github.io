@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ketan Barve Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketan Barve Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Intro Section -->
-        <div class="intro">
-            <h1>Hi, I'm <span class="name">Ketan Barve</span>!</h1>
-            <h2 class="typing"></h2>
-            <p class="role">Software Developer | Cloud & DevOps Enthusiast</p>
-            <div class="buttons">
-                <a href="Ketan_Barve_Resume.pdf" class="btn" target="_blank">Resume</a>
-                <a href="https://www.linkedin.com/in/ketan-barve" class="btn" target="_blank">LinkedIn</a>
-            </div>
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hello, It's Me</h1>
+        <h2>Ketan Barve</h2>
+        <p>And I'm a <span class="typing"></span></p>
+        <div class="socials">
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/ketan-barve" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
-
-        <!-- Projects Section -->
-        <div class="projects">
-            <h2>My Projects</h2>
-            <div class="project-cards">
-                <div class="card">
-                    <h3>ci-cd-github-actions-ec2</h3>
-                    <p>Automated CI/CD pipeline deploying Node.js app to EC2 using GitHub Actions.</p>
-                </div>
-                <div class="card">
-                    <h3>docker-nodejs-app</h3>
-                    <p>Containerized Node.js application with Docker for scalable deployments.</p>
-                </div>
-                <div class="card">
-                    <h3>aws-lambda-api</h3>
-                    <p>Serverless API using AWS Lambda and API Gateway for efficient backend services.</p>
-                </div>
-                <div class="card">
-                    <h3>vpc-ec2-architecture</h3>
-                    <p>Designed secure VPC architecture with multiple subnets and EC2 instances on AWS.</p>
-                </div>
-                <div class="card">
-                    <h3>monitoring-cloudwatch</h3>
-                    <p>Implemented AWS CloudWatch monitoring and alarms for infrastructure and app performance.</p>
-                </div>
-                <div class="card">
-                    <h3>k8s-hello-world</h3>
-                    <p>Deployed a "Hello World" application on Kubernetes cluster to demonstrate container orchestration.</p>
-                </div>
-            </div>
-        </div>
+        <a href="Ketan_Barve_Resume.pdf" class="btn" target="_blank">Download CV</a>
+      </div>
+      <div class="hero-image">
+        <img src="profile.jpg" alt="Ketan Barve">
+      </div>
     </div>
+  </header>
 
-    <script src="script.js"></script>
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>ci-cd-github-actions-ec2</h3>
+        <p>Automated CI/CD pipeline deploying Node.js app to EC2 using GitHub Actions.</p>
+      </div>
+      <div class="card">
+        <h3>docker-nodejs-app</h3>
+        <p>Containerized Node.js application with Docker for scalable deployments.</p>
+      </div>
+      <div class="card">
+        <h3>aws-lambda-api</h3>
+        <p>Serverless API using AWS Lambda and API Gateway for efficient backend services.</p>
+      </div>
+      <div class="card">
+        <h3>vpc-ec2-architecture</h3>
+        <p>Designed secure VPC architecture with multiple subnets and EC2 instances on AWS.</p>
+      </div>
+      <div class="card">
+        <h3>monitoring-cloudwatch</h3>
+        <p>Implemented AWS CloudWatch monitoring and alarms for infrastructure and app performance.</p>
+      </div>
+      <div class="card">
+        <h3>k8s-hello-world</h3>
+        <p>Deployed a "Hello World" application on Kubernetes cluster to demonstrate container orchestration.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
