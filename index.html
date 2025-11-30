@@ -1,61 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ketan Barve - Cloud & DevOps</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketan Barve | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle">🌙</button>
 
-<!-- Header Section -->
-<header>
-    <div class="header-content">
-        <h1>Ketan Barve</h1>
-        <p>Software Developer | Cloud & DevOps Enthusiast</p>
-        <a href="#projects" class="btn">View My Projects</a>
-    </div>
-</header>
+    <!-- Hero Section -->
+    <header class="hero">
+      <img src="profile.jpg" alt="Ketan Barve" class="profile-pic">
+      <h1><span id="typed"></span></h1>
+      <p>Software Developer | Cloud & DevOps Enthusiast</p>
+      <div class="buttons">
+        <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
+        <a href="https://www.linkedin.com/in/ketan-barve-500416246/" target="_blank" class="btn linkedin">LinkedIn</a>
+      </div>
+    </header>
 
-<!-- About Me Section -->
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>
-            Motivated and enthusiastic professional eager to learn and grow in software development and cloud technologies. Passionate about DevOps, automation, and building efficient cloud-native applications.
-        </p>
-    </div>
-</section>
+    <!-- About Section -->
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Motivated and enthusiastic professional eager to learn and grow in software development and cloud technologies. Passionate about DevOps, automation, and building efficient cloud-native applications.</p>
+    </section>
 
-<!-- Projects Section -->
-<section id="projects">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-
-            <div class="card">
-                <h3>Kubernetes Hello World</h3>
-                <p>A simple Kubernetes deployment showcasing pods, services, and scaling.</p>
-                <a href="#" class="btn">View Project</a>
-            </div>
-
-            <div class="card">
-                <h3>CI/CD with GitHub Actions & EC2</h3>
-                <p>Automated CI/CD pipeline deploying to AWS EC2 using GitHub Actions.</p>
-                <a href="#" class="btn">View Project</a>
-            </div>
-
-            <div class="card">
-                <h3>Docker Node.js App</h3>
-                <p>Node.js application containerized using Docker best practices.</p>
-                <a href="#" class="btn">View Project</a>
-            </div>
-
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <h3>Kubernetes Hello World</h3>
+          <p>A simple Kubernetes deployment showcasing pods, services, and scaling.</p>
+          <a href="#" class="btn">View Project</a>
         </div>
-    </div>
-</section>
+        <div class="project-card">
+          <h3>CI/CD with GitHub Actions & EC2</h3>
+          <p>Automated CI/CD pipeline deploying to AWS EC2 using GitHub Actions.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Docker Node.js App</h3>
+          <p>Node.js application containerized using Docker best practices.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>AWS Lambda API</h3>
+          <p>Serverless API deployed on AWS Lambda with API Gateway integration.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>VPC & EC2 Architecture</h3>
+          <p>Demonstrates VPC setup, subnets, and EC2 instances configuration.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Monitoring with CloudWatch</h3>
+          <p>CloudWatch monitoring setup with dashboards and alarms for EC2 instances.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+  </div>
 
-<!-- LinkedIn Section -->
-<section id="linkedin">
-    <div class="container">
-        <a href="https://www.linkedin.com/in/ketan-barve-500416246/" target="_blank" class_
+  <script>
+    // Typing Animation
+    var typed = new Typed('#typed', {
+      strings: ["Hi, I'm Ketan Barve!"],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true
+    });
+
+    // Dark Mode Toggle
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
