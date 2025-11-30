@@ -1,86 +1,42 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  background: linear-gradient(to bottom, #a0d8f1, #ffffff);
-  color: #333;
-  transition: background 0.3s, color 0.3s;
+/* Projects section */
+.projects {
+    margin-top: 50px;
+    text-align: center;
 }
 
-.dark-mode {
-  background: #121212;
-  color: #e0e0e0;
-}
-
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 2rem 0;
-}
-
-.hero {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.profile-pic {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin: 0.5rem 0;
-}
-
-.hero .buttons .btn {
-  text-decoration: none;
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-  border-radius: 5px;
-}
-
-.hero .buttons .linkedin {
-  background-color: #0e76a8;
-}
-
-.about, .projects {
-  margin-bottom: 3rem;
+.projects h2 {
+    color: #00d8ff;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.project-card {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  flex: 1 1 calc(33% - 1rem);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 216, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-card h3 {
-  margin-top: 0;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 216, 255, 0.5);
 }
 
-.project-card .btn {
-  display: inline-block;
-  margin-top: 1rem;
+.card h3 {
+    color: #ffdd57;
+    margin-bottom: 10px;
 }
 
-/* Dark mode card style */
-.dark-mode .project-card {
-  background: #1e1e1e;
-  color: #e0e0e0;
-}
-
-/* Dark mode buttons */
-.dark-mode .btn {
-  background-color: #0d6efd;
+.card p {
+    color: #bbbbbb;
+    font-size: 0.95rem;
 }
