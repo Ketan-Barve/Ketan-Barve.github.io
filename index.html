@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ketan Barve Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ketan Banw | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header / Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Hello, It's Me</h1>
-        <h2>Ketan Barve</h2>
-        <p>And I'm a <span class="typing"></span></p>
-        <div class="socials">
-          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/ketan-barve" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <a href="Ketan_Barve_Resume.pdf" class="btn" target="_blank">Download CV</a>
-      </div>
-      <div class="hero-image">
-        <img src="profile.jpg" alt="Ketan Barve">
-      </div>
+  <header>
+    <h1>Hi, I'm <span class="highlight">Ketan</span></h1>
+    <p>DevOps and Cloud Engineer</p>
+    <div class="buttons">
+      <a href="resume.pdf" class="btn">Download Resume</a>
+      <a href="https://www.linkedin.com/in/ketan-barve-500416246/" class="btn" target="_blank">LinkedIn</a>
     </div>
   </header>
 
-  <!-- Projects Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a motivated and enthusiastic DevOps and Cloud Engineer passionate about automation, infrastructure as code, and building scalable cloud-native applications.
+    </p>
+  </section>
+
   <section class="projects">
-    <h2>My Projects</h2>
-    <div class="project-cards">
+    <h2>Projects</h2>
+    <div class="project-grid">
       <div class="card">
-        <h3>ci-cd-github-actions-ec2</h3>
-        <p>Automated CI/CD pipeline deploying Node.js app to EC2 using GitHub Actions.</p>
+        <h3>Kubernetes Hello World</h3>
+        <p>A simple Kubernetes deployment showcasing pods, services, and scaling.</p>
+        <a href="#" class="view-btn">View Project</a>
       </div>
       <div class="card">
-        <h3>docker-nodejs-app</h3>
-        <p>Containerized Node.js application with Docker for scalable deployments.</p>
+        <h3>CI/CD with GitHub Actions & EC2</h3>
+        <p>Automated CI/CD pipeline deploying to AWS EC2 using GitHub Actions.</p>
+        <a href="#" class="view-btn">View Project</a>
       </div>
       <div class="card">
-        <h3>aws-lambda-api</h3>
-        <p>Serverless API using AWS Lambda and API Gateway for efficient backend services.</p>
+        <h3>Docker Node.js App</h3>
+        <p>Node.js application containerized using Docker best practices.</p>
+        <a href="#" class="view-btn">View Project</a>
       </div>
       <div class="card">
-        <h3>vpc-ec2-architecture</h3>
-        <p>Designed secure VPC architecture with multiple subnets and EC2 instances on AWS.</p>
+        <h3>AWS Lambda API</h3>
+        <p>Serverless API deployed on AWS Lambda with API Gateway integration.</p>
+        <a href="#" class="view-btn">View Project</a>
       </div>
       <div class="card">
-        <h3>monitoring-cloudwatch</h3>
-        <p>Implemented AWS CloudWatch monitoring and alarms for infrastructure and app performance.</p>
+        <h3>VPC & EC2 Architecture</h3>
+        <p>Demonstrates VPC setup, subnets, and EC2 instances configuration.</p>
+        <a href="#" class="view-btn">View Project</a>
       </div>
       <div class="card">
-        <h3>k8s-hello-world</h3>
-        <p>Deployed a "Hello World" application on Kubernetes cluster to demonstrate container orchestration.</p>
+        <h3>Monitoring with CloudWatch</h3>
+        <p>CloudWatch monitoring setup with dashboards and alarms for EC2 instances.</p>
+        <a href="#" class="view-btn">View Project</a>
       </div>
     </div>
   </section>
+
+  <footer>
+    <p>© 2025 Ketan Banw</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
