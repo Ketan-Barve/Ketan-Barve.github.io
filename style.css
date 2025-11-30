@@ -1,73 +1,86 @@
-/* ========================
-   Body & Background
-======================== */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
-    background: #0d0d0d;
-    overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #a0d8f1, #ffffff);
+  color: #333;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* Matrix-style animated background */
-#bgCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1; /* behind content */
-    width: 100%;
-    height: 100%;
+.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
 }
 
-/* ========================
-   Container
-======================== */
 .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-    position: relative;
-    z-index: 1;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
 }
 
-/* ========================
-   Profile Picture
-======================== */
-.profile {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 3px solid #0aff0a;
-    margin-bottom: 20px;
-    object-fit: cover;
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-/* ========================
-   Headings & Subtitle
-======================== */
-h1 {
-    font-size: 2.5rem;
-    margin: 10px 0;
-    color: #0aff0a;
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-.subtitle {
-    margin-top: 5px;
-    font-size: 1.1rem;
-    color: #bbb;
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
 }
 
-/* ========================
-   Buttons
-======================== */
-.buttons {
-    margin: 20px 0;
+.hero .buttons .btn {
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 12px 22px;
-    margin: 10px;
-    border: 2px solid #0aff0a;
+.hero .buttons .linkedin {
+  background-color: #0e76a8;
+}
+
+.about, .projects {
+  margin-bottom: 3rem;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1 1 calc(33% - 1rem);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card .btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Dark mode card style */
+.dark-mode .project-card {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+/* Dark mode buttons */
+.dark-mode .btn {
+  background-color: #0d6efd;
+}
